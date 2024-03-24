@@ -45,6 +45,7 @@ func main() {
 	}()
 
 	var e Engine
+	e.init()
 	for {
 		conn, err := l.Accept()
 		if err != nil {
